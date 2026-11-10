@@ -1,28 +1,28 @@
-
 .ticBox {
+    width: 100%;
+    max-width: 430px;
+    min-height: 145px;
+    box-sizing: border-box;
+
+    margin: 0;
+    padding: 20px 12px;
+
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 18px;
+    flex-wrap: wrap;
+    gap: 10px;
 
-    width: 420px;
-    max-width: 90%;
-    min-height: 130px;
+    background: linear-gradient(135deg, #fffdf2, #f4e5bd);
+    border: 2px dashed #a98a4c;
+    border-radius: 6px;
 
-    padding: 25px;
-    margin: 20px auto;
-
-    background: #fff8e7;
-    border: 2px dashed #b99b60;
-    border-radius: 5px;
-
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.18);
-    box-sizing: border-box;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
 }
 
 .ticNumber {
-    width: 65px;
-    height: 65px;
+    width: 48px;
+    height: 48px;
     flex-shrink: 0;
 
     display: flex;
@@ -30,10 +30,23 @@
     justify-content: center;
 
     background: #fffdf7;
-    border: 2px solid #b99b60;
+    border: 2px solid #b38b3c;
     border-radius: 50%;
 
-    color: #29251d;
-    font-size: 30px;
-    font-weight: 800;
+    font-size: 23px;
+    font-weight: 900;
+}
+
+@media (max-width: 480px) {
+    .ticBox {
+        width: 100%;
+        gap: 12px;
+        padding: 20px 12px;
+    }
+
+    .ticNumber {
+        width: 55px;
+        height: 55px;
+        font-size: 25px;
+    }
 }
