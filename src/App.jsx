@@ -4,10 +4,13 @@ import TicketNum from './TicketNum.jsx';
 
 function App() {
 
+  function wRule(ticket) {
+    return ticket[0] === 0;
+  }
 
   return (
     <>
-      <Lottery n={3} wNum={15} />
+      <Lottery n={3} wNum={15} wRule={wRule} />
     </>
   )
 }
