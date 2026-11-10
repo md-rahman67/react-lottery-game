@@ -1,11 +1,12 @@
-import './App.css'
+import './App.css';
+import Lottery from "./Lottery.jsx";
 
 function App() {
 
 
   return (
     <>
-      <h2>Learning</h2>
+      <Lottery />
     </>
   )
 }
